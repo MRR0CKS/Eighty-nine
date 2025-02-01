@@ -1,0 +1,10 @@
+state = states.IDLE; 
+xp = xprevious
+yp = yprevious
+hsp = 0 
+vsp = 0 
+knockback_time = 0 
+can_attack = true 
+hurt_time = 30; 
+flash_init = 16
+flash = flash_init/2 
