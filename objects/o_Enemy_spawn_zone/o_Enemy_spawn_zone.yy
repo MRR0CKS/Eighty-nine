@@ -6,8 +6,8 @@
   "name":"o_Enemy_spawn_zone",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
