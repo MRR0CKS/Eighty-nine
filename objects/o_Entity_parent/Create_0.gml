@@ -8,3 +8,4 @@ can_attack = true
 hurt_time = 30; 
 flash_init = 16
 flash = flash_init/2 
+depth = 1

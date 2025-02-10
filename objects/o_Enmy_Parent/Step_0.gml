@@ -1,4 +1,4 @@
-
+if (global.pause) exit ; 
 switch (state) 
 { 
 	case states.IDLE:

@@ -1,5 +1,4 @@
-/// @description Insert description here
-
+if (global.pause) exit ; 
 //randomizwe position 
 randomize()
 zone_inst = instance_find(o_Enemy_spawn_zone, irandom_range(0, zone_count))

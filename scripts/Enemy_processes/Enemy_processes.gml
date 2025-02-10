@@ -1,4 +1,6 @@
+
 function enemy_anim() { 
+
 switch (state) 
 { 
 	case states.IDLE:
@@ -66,7 +68,7 @@ xp=x
 yp=y 
 }
 function Check_for_player(){
-	
+	if (global.pause) exit ; 
 	if o_Player.state == states.DEAD exit; 
 	
 	var dist = distance_to_object(o_Player)
@@ -80,22 +82,25 @@ if calc_path_timer-- <=0 {
 	if x==xp and y == yp var type = 0 else var type = 1
 	//path 
 	var Found_player = mp_grid_path(global.mp_grid, path, x , y, o_Player.x,o_Player.y, type)
-	if Found_player {
+	if Found_player&&!global.pause {
 	path_start(path,spd, path_action_stop, false)}
 	}
 	}else {
 		//close to player
 		if dist <= attack_dist { 
+			if (global.pause) exit ; 
 			path_end()
 			state = states.ATTACK} 	
 	} 
 }
 function check_if_stopped() {
+	if (global.pause) exit ; 
 if abs(hsp) < 0.1 hsp = 0 	
 if abs(vsp) < 0.1 vsp = 0 	
 }
 function calc_entity_movement() {
 	//apply
+	if (global.pause) exit ; 
 x += hsp
 y += vsp 
 //slowdown
@@ -119,6 +124,7 @@ function calc_knockback_movement(){
 	if knockback_time <= 0 state = states.IDLE
 }
 function attack() {
+	if (global.pause) exit ; 
 	//attack sprite
 	//image_index >= attack_frame and↓↓↓↓↓↓↓↓↓↓↓↓
 if  image_index >= attack_frame and can_attack  {

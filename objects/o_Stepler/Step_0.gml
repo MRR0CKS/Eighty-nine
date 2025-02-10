@@ -1,3 +1,4 @@
+if (global.pause) exit ; 
  x = o_Player.x
   y = o_Player.y -10
   angle = point_direction(x,y,mouse_x,mouse_y)

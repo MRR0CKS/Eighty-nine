@@ -9,7 +9,9 @@ Foldernames = [
 	"Finance report",
 	"Work",
 	"new_folder",
-	"fsfnb"
+	"fsfnb",
+	"System 32"
 	
 ];
 Foldername = irandom(array_length(Foldernames) - 1);
+depth = 2 

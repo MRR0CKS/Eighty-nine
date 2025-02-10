@@ -1,3 +1,4 @@
+if (global.pause) path_end();
 switch (state) {
 	case states.DEAD:
 	image_index = image_number - 1;
