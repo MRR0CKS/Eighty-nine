@@ -1,3 +1,4 @@
+if (global.pause) exit ; 
 Timetildestroy --
 if Timetildestroy = 0 {
 	instance_destroy()

@@ -1,7 +1,8 @@
+if (global.pause) exit ; 
 if follow !=noone 
 {
 	xTo = follow.x; 
-	yTo = follow.y ;
+	yTo = follow.y;
 }
 
 x += (xTo -x)/25;

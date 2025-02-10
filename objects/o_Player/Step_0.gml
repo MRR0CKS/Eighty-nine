@@ -1,3 +1,4 @@
+if (global.pause) {image_index = 0  exit}; 
 //move_and_collide(xspd * Movespd,yspd * Movespd, o_FolderWall) 	
 //State machine 
 switch (state) { 

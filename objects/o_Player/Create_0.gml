@@ -21,4 +21,5 @@ event_inherited();
 	aimDir = 0
 // Restart 
 ready_to_restart = false 
-	
+// depth
+depth = -10 

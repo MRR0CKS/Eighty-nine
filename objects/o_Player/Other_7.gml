@@ -1,3 +1,4 @@
+
 switch (state) { 
 	case states.DEAD:
 	image_index = image_number - 1 

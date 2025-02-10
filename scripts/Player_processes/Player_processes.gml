@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+
 function get_input(){
 Upkey =  keyboard_check(ord("W")) 
 Downkey =  keyboard_check(ord("S")) 
@@ -13,6 +14,7 @@ Rightkey = 0
 Leftkey = 0 
 }
 function calc_movement() {
+		if (global.pause) path_end();
 //movement
 	xspd = (Rightkey - Leftkey)
 	yspd = (Downkey - Upkey)
