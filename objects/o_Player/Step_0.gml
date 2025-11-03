@@ -39,3 +39,4 @@ if xspd == 0 && yspd == 0 {
 	if hp <=  0 {
 		image_blend = c_red} 
 		#endregion
+		

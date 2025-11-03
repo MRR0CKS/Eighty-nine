@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"End_dialogue",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"End_dialogue",
+  "parent":{
+    "name":"Dialogues",
+    "path":"folders/Scripts/Dialogues.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

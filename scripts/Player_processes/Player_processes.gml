@@ -1,11 +1,12 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function get_input(){
+function get_input(){ if !global.player_can_move = false{
 Upkey =  keyboard_check(ord("W")) 
 Downkey =  keyboard_check(ord("S")) 
 Rightkey =  keyboard_check(ord("D")) 
 Leftkey =  keyboard_check(ord("A")) 
+}
 }
 function reset_vars() {
 Upkey = 0
